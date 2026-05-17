@@ -29,6 +29,5 @@ func NewDB() (sqlmock.Sqlmock, *gorm.DB) {
 	if err != nil {
 		log.Fatalf("[gorm open] %s", err)
 	}
-
 	return mock, db
 }

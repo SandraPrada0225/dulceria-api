@@ -1,11 +1,13 @@
 package entities
 
+import "time"
+
 type Venta struct {
 	ID            uint64
 	MedioDePagoID uint64
 	CarritoID     uint64
 	CompradorID   uint64
-	CreatedAt     uint64
+	CreatedAt     time.Time
 }
 
 func (Venta) TableName() string {
