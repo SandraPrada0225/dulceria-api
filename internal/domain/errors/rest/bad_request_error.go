@@ -1,5 +1,6 @@
 package rest
 
+// error 400
 type BadRequestError struct {
 	mensaje string
 }
